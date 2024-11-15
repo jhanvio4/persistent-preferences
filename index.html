@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistent Preferences</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- List Section -->
+        <section id="list-section">
+            <h2>Items List</h2>
+            <ul id="item-list"></ul>
+        </section>
+
+        <!-- Preferences Panel -->
+        <section id="preferences-panel">
+            <h3>Preferences</h3>
+            
+            <!-- Theme Selection -->
+            <div class="preference">
+                <label for="theme">Choose a theme:</label>
+                <select id="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </div>
+            
+            <!-- List Style Selection -->
+            <div class="preference">
+                <label for="list-style">Choose list style:</label>
+                <select id="list-style">
+                    <option value="none">No Style</option>
+                    <option value="disc">Bulleted</option>
+                    <option value="decimal">Numbered</option>
+                </select>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

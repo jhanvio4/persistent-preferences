@@ -1,0 +1,66 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container to center the content */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* List Section */
+#list-section {
+    flex: 1;
+    padding: 20px;
+}
+
+#item-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Preferences Panel */
+#preferences-panel {
+    flex: 0.3;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.preference {
+    margin-bottom: 15px;
+}
+
+/* Themes */
+.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.blue {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #preferences-panel {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
